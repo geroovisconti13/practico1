@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head lang="en">
+
+    </head>
+    <body>
+
+        <div class="container">
+            <div th:fragment="header">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="/practico1">ESTUDIOS</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="/practico1">Home</a></li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">General
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" th:href="@{/usuarios}">Usuarios</a></li>
+                                    <li><a href="#" th:href="@{/roles}">Roles</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Archivo
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" th:href="@{/compradores}">Compradores</a></li>
+                                    <li><a href="#" th:href="@{/cultivos}">Cultivos</a></li>
+                                    <li><a href="#" th:href="@{/lotes}">Lotes</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sistema
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" th:href="@{/plantaciones}">Plantaciones</a></li>
+                                    <li><a href="#" th:href="@{/gastos}">Gastos</a></li>
+                                    <li><a href="#" th:href="@{/cosechas}">Cosechas</a></li>
+                                    <li><a href="#" th:href="@{/ventas}">Ventas</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </div>
+    </body>
+</html>

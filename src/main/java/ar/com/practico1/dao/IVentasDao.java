@@ -1,0 +1,10 @@
+package ar.com.practico1.dao;
+
+import ar.com.practico1.entities.Ventas;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IVentasDao extends JpaRepository<Ventas, Integer> {
+    Page<Ventas> findAll(Pageable pageable);
+}
